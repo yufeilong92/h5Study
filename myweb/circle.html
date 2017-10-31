@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+
+	</head>
+
+	<body>
+		<canvas id="mycirclee" width="200" height="100" style="border: 1px solid#5F9EA0;">你是</canvas>
+		<script type="application/javascript">
+			var c = document.getElementById("mycirclee");
+			var cxt = c.getContext("2d");
+			cxt.fillStyle = "#FF0000";
+			cxt.beginPath();
+			cxt.arc(100, 50, 25, 0, Math.PI * 2, true);
+			cxt.closePath();
+			cxt.fill();
+			cxt.moveTo(0, 0);
+			cxt.lineTo(100, 50);
+			cxt.lineTo(200, 0);
+			cxt.lineTo(0, 100);
+			cxt.moveTo(100, 50);
+			cxt.lineTo(200, 100);
+			cxt.stroke();
+		</script>
+	</body>
+
+</html>

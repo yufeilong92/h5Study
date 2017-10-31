@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>niaho </title>
+	
+	
+	</head>
+
+	<body>
+		<canvas id="mychangcolor" width="200" height="100" style="border: 1px solid#FF0000;">你好</canvas>
+	<script type="text/javascript">
+			var c = document.getElementById("mychangcolor");
+			var cxt = c.getContext("2d");
+			var grd = cxt.createLinearGradient(0, 0, 200, 100);
+			grd.addColorStop(0, "#FF0000");
+			grd.addColorStop(1, "#00ff00");
+			cxt.fillStyle = grd;
+			cxt.fillRect(0, 0, 200, 100);
+		</script>
+	</body>
+
+</html>
